@@ -7,11 +7,11 @@ jQuery(document).ready(function($) {
 	 //menu active
     var stellarnav =  $('.stellarnav');
       stellarnav.stellarNav({
-        theme: 'light',
+        theme: "light",
         breakpoint: 960,
-        position: 'right',
-        phoneBtn: '18009997788',
-        locationBtn: 'https://www.google.com/maps'
+        position: "right",
+        phoneBtn: "+8801754393236",
+        locationBtn: "https://maps.app.goo.gl/nth6MhSEyunZMkqK7",
       });
 
       //All Carousel active
@@ -255,39 +255,17 @@ jQuery(document).ready(function($) {
     stickyNav();
 
     $('#circle1').circleProgress({
-      value: 0.6,
+      value: 0.95,
       fill: {
         color: '#08d665'
       },
       emptyFill: '#ffffff',
     }).on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(60 * progress) + '<i>%</i>');
+      $(this).find('strong').html(Math.round(95 * progress) + '<i>%</i>');
   });
 
 
     $('#circle2').circleProgress({
-      value: 0.7,
-      fill: {
-        color: '#08d665'
-      },
-      emptyFill: '#ffffff',
-    }).on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(70 * progress) + '<i>%</i>');
-  });
-
-
-    $('#circle3').circleProgress({
-      value: 0.3,
-      fill: {
-        color: '#08d665'
-      },
-      emptyFill: '#ffffff',
-    }).on('circle-animation-progress', function(event, progress) {
-      $(this).find('strong').html(Math.round(30 * progress) + '<i>%</i>');
-  });
-
-
-    $('#circle4').circleProgress({
       value: 0.9,
       fill: {
         color: '#08d665'
@@ -295,6 +273,28 @@ jQuery(document).ready(function($) {
       emptyFill: '#ffffff',
     }).on('circle-animation-progress', function(event, progress) {
       $(this).find('strong').html(Math.round(90 * progress) + '<i>%</i>');
+  });
+
+
+    $('#circle3').circleProgress({
+      value: 0.85,
+      fill: {
+        color: '#08d665'
+      },
+      emptyFill: '#ffffff',
+    }).on('circle-animation-progress', function(event, progress) {
+      $(this).find('strong').html(Math.round(85 * progress) + '<i>%</i>');
+  });
+
+
+    $('#circle4').circleProgress({
+      value: 0.7,
+      fill: {
+        color: '#08d665'
+      },
+      emptyFill: '#ffffff',
+    }).on('circle-animation-progress', function(event, progress) {
+      $(this).find('strong').html(Math.round(70 * progress) + '<i>%</i>');
   });
 
 
